@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  threatassessor:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    container_name: threatassessor-v4
